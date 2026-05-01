@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap');
+
+html, body {
+  background: #f2f0ed;
+  color: #32302d;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin: 0 0 28px;
+  color: #1e1c1a;
+  letter-spacing: -0.03em;
+}
+
+ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 12px;
+}
+
+li::marker {
+  color: #b0aba4;
+}
+
+a {
+  color: #3a6fa8;
+  text-decoration: none;
+  border-bottom: 1px solid #a8c4e0;
+  padding-bottom: 1px;
+}
+
+a:hover { color: #1e4a78; }
+
+.back {
+  display: inline-block;
+  font-size: 0.82rem;
+  color: #8a8480;
+  text-decoration: none;
+  border-bottom: none;
+  margin-bottom: 36px;
+}
+
+.back:hover { color: #4a4642; }
+
+.intro {
+  font-size: 1rem;
+  color: #4e4b48;
+  margin-bottom: 28px;
+  border-left: 3px solid #d4cfc8;
+  padding-left: 16px;
+}
+
+@media (prefers-color-scheme: dark) {
+  html, body {
+    background: #1e1c1a;
+    color: #888480;
+  }
+
+  h1 { color: #a09890; }
+
+  li::marker { color: #48443e; }
+
+  a {
+    color: #5a8ec0;
+    border-bottom-color: #2e4e6e;
+  }
+
+  a:hover { color: #80aed8; }
+
+  .back { color: #585450; }
+  .back:hover { color: #888480; }
+
+  .intro {
+    color: #686460;
+    border-left-color: #302c28;
+  }
+}
