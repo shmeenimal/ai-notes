@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap');
 
+html {
+  min-height: 100%;
+}
+
 html, body {
-  background: #f2f0ed;
-  color: #32302d;
+  background-color: #1a0035;
+  background-image:
+    linear-gradient(135deg, #0e001e 0%, #2e0058 40%, #1a0035 65%, #240048 100%);
+  background-attachment: fixed;
+  color: #c4b4dc;
   font-family: 'DM Sans', system-ui, sans-serif;
   font-size: 17px;
   line-height: 1.75;
@@ -21,7 +28,7 @@ h1 {
   font-size: 1.75rem;
   font-weight: 500;
   margin: 0 0 28px;
-  color: #1e1c1a;
+  color: #ede0ff;
   letter-spacing: -0.03em;
 }
 
@@ -35,48 +42,48 @@ li {
 }
 
 li::marker {
-  color: #b0aba4;
+  color: #6040a0;
 }
 
 a {
-  color: #3a6fa8;
+  color: #c060e8;
   text-decoration: none;
-  border-bottom: 1px solid #a8c4e0;
+  border-bottom: 1px solid #6030a0;
   padding-bottom: 1px;
 }
 
-a:hover { color: #1e4a78; }
+a:hover { color: #e090ff; }
 
 .back {
   display: inline-block;
   font-size: 0.82rem;
-  color: #8a8480;
+  color: #7a6a90;
   text-decoration: none;
   border-bottom: none;
   margin-bottom: 36px;
 }
 
-.back:hover { color: #4a4642; }
+.back:hover { color: #b090d0; }
 
 .intro {
   font-size: 1rem;
-  color: #4e4b48;
+  color: #9a88b8;
   margin-bottom: 28px;
-  border-left: 3px solid #d4cfc8;
+  border-left: 3px solid #5a2880;
   padding-left: 16px;
 }
 
 /* SVG diagram — color tokens consumed by the <style> block inside each SVG */
 :root {
-  --svg-fill-gray:    #eceae7;
-  --svg-stroke-gray:  #b0aba4;
-  --svg-fill-purple:  #ece8f5;
-  --svg-stroke-purple:#9080c0;
-  --svg-fill-teal:    #e0f0ee;
-  --svg-stroke-teal:  #5a9898;
-  --svg-text:         #32302d;
-  --svg-text-muted:   #6a6560;
-  --svg-line:         #b0aba4;
+  --svg-fill-gray:    #2a1048;
+  --svg-stroke-gray:  #5a3080;
+  --svg-fill-purple:  #3a1060;
+  --svg-stroke-purple:#9040c0;
+  --svg-fill-teal:    #1e1040;
+  --svg-stroke-teal:  #6040a0;
+  --svg-text:         #ddd0f0;
+  --svg-text-muted:   #9080b0;
+  --svg-line:         #5a3080;
 }
 
 figure {
@@ -85,47 +92,7 @@ figure {
 
 figcaption {
   font-size: 0.82rem;
-  color: #6a6560;
+  color: #7a6a90;
   margin-top: 12px;
   text-align: center;
-}
-
-@media (prefers-color-scheme: dark) {
-  html, body {
-    background: #1e1c1a;
-    color: #888480;
-  }
-
-  h1 { color: #a09890; }
-
-  li::marker { color: #48443e; }
-
-  a {
-    color: #5a8ec0;
-    border-bottom-color: #2e4e6e;
-  }
-
-  a:hover { color: #80aed8; }
-
-  .back { color: #585450; }
-  .back:hover { color: #888480; }
-
-  .intro {
-    color: #686460;
-    border-left-color: #302c28;
-  }
-
-  :root {
-    --svg-fill-gray:    #2a2825;
-    --svg-stroke-gray:  #4a4642;
-    --svg-fill-purple:  #26223a;
-    --svg-stroke-purple:#6a5a90;
-    --svg-fill-teal:    #1a2828;
-    --svg-stroke-teal:  #3a7070;
-    --svg-text:         #888480;
-    --svg-text-muted:   #585450;
-    --svg-line:         #4a4642;
-  }
-
-  figcaption { color: #585450; }
 }
