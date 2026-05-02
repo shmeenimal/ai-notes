@@ -66,6 +66,30 @@ a:hover { color: #1e4a78; }
   padding-left: 16px;
 }
 
+/* SVG diagram — color tokens consumed by the <style> block inside each SVG */
+:root {
+  --svg-fill-gray:    #eceae7;
+  --svg-stroke-gray:  #b0aba4;
+  --svg-fill-purple:  #ece8f5;
+  --svg-stroke-purple:#9080c0;
+  --svg-fill-teal:    #e0f0ee;
+  --svg-stroke-teal:  #5a9898;
+  --svg-text:         #32302d;
+  --svg-text-muted:   #6a6560;
+  --svg-line:         #b0aba4;
+}
+
+figure {
+  margin: 36px 0;
+}
+
+figcaption {
+  font-size: 0.82rem;
+  color: #6a6560;
+  margin-top: 12px;
+  text-align: center;
+}
+
 @media (prefers-color-scheme: dark) {
   html, body {
     background: #1e1c1a;
@@ -90,4 +114,18 @@ a:hover { color: #1e4a78; }
     color: #686460;
     border-left-color: #302c28;
   }
+
+  :root {
+    --svg-fill-gray:    #2a2825;
+    --svg-stroke-gray:  #4a4642;
+    --svg-fill-purple:  #26223a;
+    --svg-stroke-purple:#6a5a90;
+    --svg-fill-teal:    #1a2828;
+    --svg-stroke-teal:  #3a7070;
+    --svg-text:         #888480;
+    --svg-text-muted:   #585450;
+    --svg-line:         #4a4642;
+  }
+
+  figcaption { color: #585450; }
 }
